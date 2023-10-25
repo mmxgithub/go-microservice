@@ -18,7 +18,7 @@ services:
       mode: replicated
       replicas: 1
     environment:
-      BrokerURL: "http://backend"
+      BROKER_URL: "http://backend"
 
   broker-service:
     image: gvvvvv/broker-service:1.0.1
